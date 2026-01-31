@@ -35,7 +35,7 @@ class MenuItem{
             name =n;
         }
 
-        int getPrice(){
+        int getPrice() const{
             return price;
         }
 
