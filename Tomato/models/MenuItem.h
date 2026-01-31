@@ -1,0 +1,47 @@
+#ifndef MENUITEM_H
+#define MENUITEM_H
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+class MenuItem{
+    private:
+        string code;
+        string name;
+        int price;
+
+    public:
+        MenuItem(const string& code, const string &name, int price){
+            this->code=code;
+            this->name=name;
+            this->price=price;
+        }
+
+        //Getter and Setters
+        string getCode() const{
+            return code;
+        }
+
+        string getName(){
+            return name;
+        }
+
+        string setCode(const string& c){
+            code = c;
+        }
+
+        string setName(const string& n){
+            name =n;
+        }
+
+        int getPrice(){
+            return price;
+        }
+
+        int setPrice(int p){
+            price=p;
+        }
+};
+
+#endif //MENUITEM_H
